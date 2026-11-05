@@ -1,11 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ReactStars from 'react-stars';
-import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { removeFromCart } from '../../../../slices/cartSlice';
-import { ratingsEndpoints } from '../../../../services/apis';
 
 // const cart = [
 //     {

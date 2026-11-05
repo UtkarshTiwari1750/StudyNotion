@@ -23,19 +23,19 @@ const LearningLanguageSection = () => {
             <div className='flex flex-row items-center justify-center mt-5'>
                 <img 
                     src={know_your_progress} 
-                    alt="know_your_progress image"
+                    alt="Know your progress"
                     className='object-contain -mr-32' 
                 />
 
                 <img 
                     src={compare_with_others} 
-                    alt="compare_with_others image"
+                    alt="Compare with others"
                     className='object-contain' 
                 />
 
                 <img 
                     src={plan_your_lesson} 
-                    alt="plan_your_lesson image"
+                    alt="Plan your lesson"
                     className='object-contain -ml-32' 
                 />
 

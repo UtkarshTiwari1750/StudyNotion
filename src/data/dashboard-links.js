@@ -1,5 +1,4 @@
 import { ACCOUNT_TYPE } from "../utils/constants";
-import { IoCartOutline } from "react-icons/io5";
 
 export const sidebarLinks = [
   {

@@ -89,7 +89,6 @@ const CourseDetails = () => {
     }
 
     const{
-        _id: course_id,
         courseName,
         courseDescription,
         thumbnail,
@@ -106,7 +105,7 @@ const CourseDetails = () => {
         setIsActive(
             !isActive.includes(id) 
             ? isActive.concat(id)
-            : isActive.filter((e) => e != id)
+            : isActive.filter((e) => e !== id)
         )
     }
     

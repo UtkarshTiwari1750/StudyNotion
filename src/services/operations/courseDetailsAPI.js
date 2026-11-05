@@ -1,9 +1,6 @@
 import toast from "react-hot-toast";
 import { courseEndpoints } from "../apis";
 import { apiConnector } from "../apiconnector";
-import {setLoading} from "../../slices/profileSlice"
-
-
 const {
     COURSE_DETAILS_API,
     COURSE_CATEGORIES_API,

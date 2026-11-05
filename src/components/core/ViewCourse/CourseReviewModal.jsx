@@ -36,7 +36,7 @@ const CourseReviewModal = ({setReviewModal}) => {
     useEffect(() => {
         setValue("courseExperience", "");
         setValue("courseRating", 0);
-    },[])
+    },[setValue])
   return (
     <div className='fixed inset-0 z-[1000] mt-0 grid h-screen w-screen place-items-center overflow-auto bg-white bg-opacity-10 backdrop-blur-sm'>
         <div className='my-10 w-11/12 max-w-[700px] rounded-lg border border-richblack-400 bg-richblack-800'>
@@ -56,7 +56,7 @@ const CourseReviewModal = ({setReviewModal}) => {
                 <div className='flex items-center justify-center gap-x-4'>
                     <img 
                         src={user?.image} 
-                        alt="User Image" 
+                        alt="User profile" 
                         className='aspect-square w-[50px] rounded-full object-cover'
                     />
 

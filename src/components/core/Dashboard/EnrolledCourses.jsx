@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { getUserEnrolledCourses } from '../../../services/operations/profileAPI';
 import ProgressBar from '@ramonak/react-progress-bar';
-import { IoMdMore } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -35,7 +34,7 @@ const EnrolledCourses = () => {
         }
       }
       getEnrolledCourses();
-    }, [])
+    }, [token])
     console.log("RESPOSE.....", enrolledCourses);
 
 
@@ -104,7 +103,7 @@ const EnrolledCourses = () => {
                             height='8px'
                             isLabelVisible={false}
                             baseBgColor='#2C333F'
-                            bgColor={course.progressPercentage == 100 ? "#06D6A0" : "#47A5C5"}
+                            bgColor={course.progressPercentage === 100 ? "#06D6A0" : "#47A5C5"}
                           />
                         </div>
                     </div>

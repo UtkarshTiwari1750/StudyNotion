@@ -4,11 +4,10 @@ import { useParams } from 'react-router-dom'
 import { apiConnector } from '../services/apiconnector';
 import { categories } from '../services/apis';
 import { getCatalogPageData } from '../services/operations/pageAndComponentData';
-import Course_Card from '../components/core/Catalog/Course_Card';
+import CourseCard from '../components/core/Catalog/Course_Card';
 import CourseSlider from '../components/core/Catalog/CourseSlider';
 import { useDispatch, useSelector } from 'react-redux';
 import { setLoading } from '../slices/profileSlice';
-import Error from './Error';
 const Catalog = () => {
     const {catalogName} = useParams();
     const [catalogPageData, setCatalogPageData] = useState(null);
@@ -41,7 +40,7 @@ const Catalog = () => {
         }
         if(categoryId)
             getCategoryDetails();
-    }, [categoryId]);
+    }, [categoryId, dispatch]);
 
     if(loading || !catalogPageData) {
         return (
@@ -121,7 +120,7 @@ const Catalog = () => {
                         {
                             catalogPageData?.mostSellingCourses?.slice(0,4)
                             .map((course, index) => (
-                                <Course_Card course={course} key={index} Height={"h-[400px]"}/>
+                                <CourseCard course={course} key={index} Height={"h-[400px]"}/>
                             ))
                         }
                     </div>

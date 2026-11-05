@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import IconBtn from '../../../common/IconBtn'
 import { updateProfile } from '../../../../services/operations/SettingsAPI'
-import toast from 'react-hot-toast'
 
 const genders = ["Male", "Female", "Non-Binary", "Prefer not to say", "Other"]
 

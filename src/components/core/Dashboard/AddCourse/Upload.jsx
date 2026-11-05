@@ -45,11 +45,11 @@ const Upload = ({
 
     useEffect(() => {
       register(name, {required: true})
-    },[register]);
+    },[register, name]);
 
     useEffect(() => {
       setValue(name, selectedFile);
-    }, [selectedFile, setValue]);
+    }, [selectedFile, setValue, name]);
 
   return (
     <div className='flex flex-col space-y-2'>

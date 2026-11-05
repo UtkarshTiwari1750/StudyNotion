@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Table, Tbody, Thead,Tr, Td, Th } from 'react-super-responsive-table';
 import { COURSE_STATUS } from '../../../../utils/constants';
 import { useNavigate } from 'react-router-dom';
@@ -15,7 +15,6 @@ import formatDate from '../../../../services/formatDate';
 
 const CoursesTable = ({courses, setCourses}) => {
 
-    const dispatch = useDispatch();
     const {token} = useSelector((state) => state.auth);
     const [loading, setLoading] = useState(false);
     const [confirmationModal, setConfirmationModal] = useState(null);

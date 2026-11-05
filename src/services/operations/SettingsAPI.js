@@ -1,6 +1,6 @@
 import toast from "react-hot-toast";
 import { settingsEndpoints } from "../apis";
-import { setLoading, setUser } from "../../slices/profileSlice";
+import { setUser } from "../../slices/profileSlice";
 import { apiConnector } from "../apiconnector";
 import { logout } from "./authAPI";
 

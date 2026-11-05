@@ -32,7 +32,7 @@ const Template = ({title, description1, description2, image, formType}) => {
                     {/* Right */}
                     <div className='relative mx-auto w-11/12 max-w-[450px] md:mx-0'>
                         <img src={frameImg} alt="frameImg" loading='lazy'/>
-                        <img src={image} alt="image" loading='lazy' 
+                        <img src={image} alt="Sign up illustration" loading='lazy' 
                             className='z-10 absolute -top-4 right-4'
                         />
                     </div>

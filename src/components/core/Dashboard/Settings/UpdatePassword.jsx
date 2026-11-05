@@ -7,9 +7,6 @@ import { useNavigate } from 'react-router-dom'
 import { changePassword } from '../../../../services/operations/SettingsAPI'
 import { useSelector } from 'react-redux'
 
-
-const genders = ["Male", "Female", "Non-Binary", "Prefer not to say", "Other"]
-
 const UpdatePassword = () => {
   const navigate = useNavigate();
   const {token} = useSelector((state) => state.auth)

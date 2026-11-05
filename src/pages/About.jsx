@@ -31,9 +31,9 @@ const About = () => {
                 </p>
 
                 <div className='flex gap-x-6 absolute -bottom-20'>
-                    <img src={BannerImage1}  />
-                    <img src={BannerImage2}  />
-                    <img src={BannerImage3}  />
+                    <img src={BannerImage1} alt="About us banner 1" />
+                    <img src={BannerImage2} alt="About us banner 2" />
+                    <img src={BannerImage3} alt="About us banner 3" />
                 </div>
             </div>
         </section>

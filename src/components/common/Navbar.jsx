@@ -18,7 +18,6 @@ const Navbar = () => {
     const location = useLocation();
 
     const [subLinks, setSubLinks] = useState([]);
-    const [loading, setLoading] = useState(false);
 
     const fetchSublinks = async () => {
         try{

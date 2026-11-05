@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react"
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
-import { Autoplay,FreeMode,Navigation, Pagination}  from 'swiper/modules'
+import { Autoplay,FreeMode, Pagination}  from 'swiper/modules'
 import ReactStars from 'react-stars'
 import { ratingsEndpoints } from '../../services/apis'
 import { apiConnector } from '../../services/apiconnector'
@@ -22,7 +22,6 @@ const ReviewSlider = () => {
             if(data?.success){
                 setReviews(data?.data);
             }
-            console.log("PRINTING REVIEWS...", reviews);
             
         } 
         fetchAllReviews();

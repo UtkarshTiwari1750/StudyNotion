@@ -27,8 +27,8 @@ const RenderSteps = () => {
     }
 
     const handleCoursePublish = async() => {
-        if(course?.status === COURSE_STATUS.PUBLISHED && getValues("public") === true ||
-        course?.status === COURSE_STATUS.DRAFT && getValues("public") === false){
+        if((course?.status === COURSE_STATUS.PUBLISHED && getValues("public") === true) ||
+        (course?.status === COURSE_STATUS.DRAFT && getValues("public") === false)){
             // No Updation in form
             // No need to make api call
             goToCourses();

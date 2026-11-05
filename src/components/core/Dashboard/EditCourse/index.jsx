@@ -23,7 +23,7 @@ const EditCourse = () => {
         }
 
         populateCourseDetails();
-    },[])
+    },[courseId, dispatch, token])
 
     if(loading){
         return (
