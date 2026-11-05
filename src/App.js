@@ -27,6 +27,7 @@ import CourseDetails from "./pages/CourseDetails";
 import ViewCourse from "./pages/ViewCourse";
 import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   const {user} = useSelector((state) => state.profile)
 
@@ -96,6 +97,8 @@ function App() {
             <ContactUs />
           } 
         />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         <Route 
         element={
