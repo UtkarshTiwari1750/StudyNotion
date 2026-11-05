@@ -1,0 +1,6 @@
+# Serve a real HTML privacy page (Meta / facebookexternalhit friendly)
+/privacy          /privacy.html   200
+/privacy-policy   /privacy.html   200
+
+# SPA fallback so React Router deep links don't 404 on Netlify
+/*                /index.html     200

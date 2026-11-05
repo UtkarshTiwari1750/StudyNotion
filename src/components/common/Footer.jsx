@@ -177,6 +177,13 @@ const Footer = () => {
                 <div className='flex flex-row'>
                     {
                         BottomFooter.map( (ele, index) => {
+                            // Privacy Policy is a static public/privacy.html page so Meta's
+                            // crawler (and direct /privacy visits) never hit a SPA 404.
+                            const isPrivacy = ele === "Privacy Policy";
+                            const href = isPrivacy
+                                ? "/privacy"
+                                : `/${ele.split(" ").join("-").toLowerCase()}`;
+
                             return (
                                 <div
                                     key={index}
@@ -186,9 +193,13 @@ const Footer = () => {
                                         : "border-r border-richblack-700"
                                     } cursor-pointer hover:text-richblack-50 transition-all duration-200 px-3`}
                                 >
-                                    <Link to={ele.split(" ").join("-").toLocaleLowerCase()}>
-                                        {ele}
-                                    </Link>
+                                    {isPrivacy ? (
+                                        <a href={href}>{ele}</a>
+                                    ) : (
+                                        <Link to={href}>
+                                            {ele}
+                                        </Link>
+                                    )}
                                 </div>
                             )
                         })
