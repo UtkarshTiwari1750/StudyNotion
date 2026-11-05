@@ -1,4 +1,4 @@
-import toast, { Toast } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 import {setLoading, setToken } from "../../slices/authSlice";
 import {resetCart} from "../../slices/cartSlice"
